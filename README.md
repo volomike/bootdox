@@ -6,6 +6,7 @@ MIT License
 
 <div align="center"><img alt="" src="https://raw.githubusercontent.com/volomike/bootdox/master/img/screenshot.png"></div>
 
+
 Using Bootstrap v3.4.1, this template can be edited to make REST API docs vaguely similar in nature to the format of the popular [docbox](https://github.com/tmcw/docbox).
 
 If you have a knowledge of Bootstrap v3.4.1, you can immediately get started by copying and pasting existing `SECTION` tags and editing them. These have a `rel` attribute on them that links to the `rel` attribute on the left sidebar menu of links pointing to these sections. jQuery is used, although no knowledge of jQuery is required -- this template handles that for you, instead.
