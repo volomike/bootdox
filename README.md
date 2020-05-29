@@ -5,7 +5,7 @@ Version: Beta 1.0 \
 MIT License
 
 <div align="center"><img alt="" src="https://raw.githubusercontent.com/volomike/bootdox/master/img/screenshot.png"></div>
-
+<p>&nbsp;</p>
 
 Using Bootstrap v3.4.1, this template can be edited to make REST API docs vaguely similar in nature to the format of the popular [docbox](https://github.com/tmcw/docbox).
 
