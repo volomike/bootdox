@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="">
+<meta name="google" content="notranslate">
+<title>ACME Docs</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" href="assets.style.css">
+<link rel="stylesheet" href="assets.responsive.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/railscasts.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="assets.bootdox.js"></script>
+</head>
+<body>
+
+<a target="_blank" class="github-fork-ribbon right-bottom fixed" href="https://github.com/volomike/bootdox" data-ribbon="Fork me on GitHub!" title="Fork me on GitHub!">Fork me on GitHub!</a>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">
+				<img class="pull-left" alt="" src="img/logo.png">
+			</a>
+			<span>API Documentation</span>
+		</div><!-- navbar-header -->
+		<div class="navbar-right">
+			<ul id="langpicker" class="nav nav-pills">
+				<li class="active"><a href="#">Curl</a></li>
+				<li><a href="#">PHP</a></li>
+				<li><a href="#">Node.js</a></li>
+				<li><a href="#">Python</a></li>
+			</ul>
+		</div><!-- navbar-right -->
+	</div><!-- container-fluid -->
+</nav>
+
+<div id="layout" class="container-fluid">
+	<div class="row make-equal">
+		<div id="picker" class="col col-xs-2">
+			<div class="fixed">
+				<h1>Section Heading 1</h1>
+				<ul class="list-unstyled">
+					<li class="active"><a href="#" rel="1.1.0">Item 1</a>
+						<ul class="list-unstyled">
+							<li><a href="#" rel="1.1.1">Item 1.1</a></li>
+							<li><a href="#" rel="1.1.2">Item 1.2</a></li>
+						</ul>
+					</li>
+					<li><a href="#" rel="1.2.0">Item 2</a>
+						<ul class="list-unstyled">
+							<li><a href="#" rel="1.2.1">Item 2.1</a></li>
+							<li><a href="#" rel="1.2.2">Item 2.2</a></li>
+						</ul>
+					</li>
+					<li><a href="#" rel="1.3.0">Item 3</a>
+						<ul class="list-unstyled">
+							<li><a href="#" rel="1.3.1">Item 3.1</a></li>
+							<li><a href="#" rel="1.3.2">Item 3.2</a></li>
+						</ul>
+					</li>
+				</ul>
+				<h1>Section Heading 2</h1>
+				<ul class="list-unstyled">
+					<li><a href="#" rel="2.1.0">Item 1</a></li>
+					<li><a href="#" rel="2.2.0">Item 2</a></li>
+					<li><a href="#" rel="2.3.0">Item 3</a></li>
+					<li><a href="#" rel="2.4.0">Item 4</a></li>
+					<li><a href="#" rel="2.5.0">Item 5</a></li>
+				</ul>
+				<h1>Section Heading 3</h1>
+				<ul class="list-unstyled">
+					<li><a href="#" rel="3.1.0">Item 1</a></li>
+					<li><a href="#" rel="3.2.0">Item 2</a></li>
+					<li><a href="#" rel="3.3.0">Item 3</a></li>
+					<li><a href="#" rel="3.4.0">Item 4</a></li>
+					<li><a href="#" rel="3.5.0">Item 5</a></li>
+				</ul>
+				<h1>Section Heading 4</h1>
+				<ul class="list-unstyled">
+					<li><a href="#" rel="4.1.0">Item 1</a></li>
+					<li><a href="#" rel="4.2.0">Item 2</a></li>
+					<li><a href="#" rel="4.3.0">Item 3</a></li>
+					<li><a href="#" rel="4.4.0">Item 4</a></li>
+					<li><a href="#" rel="4.5.0">Item 5</a></li>
+				</ul>
+				<h1>Section Heading 5</h1>
+				<ul class="list-unstyled">
+					<li><a href="#" rel="5.1.0">Item 1</a></li>
+					<li><a href="#" rel="5.2.0">Item 2</a></li>
+					<li><a href="#" rel="5.3.0">Item 3</a></li>
+					<li><a href="#" rel="5.4.0">Item 4</a></li>
+					<li><a href="#" rel="5.5.0">Item 5</a></li>
+				</ul>
+				<div id="plug"><a href="https://github.com/volomike/bootdox/" target="_blank">Get BootDox</a></div>
+			</div><!-- fixed -->
+		</div><!-- col -->
+		<div id="main" class="col col-xs-10">
+		
+<!-----------------------  SECTION ----------------------------------------->
+<section rel="1.1.1">
+
+	<div class="desc">
+	
+		<h1>Item 1.1</h1>
+		
+		<h2>I am an H2</h2>
+		
+		<p>Create a new foo.</p>
+		
+		<table class="table table-condensed table-bordered">
+			<colgroup>
+				<col style="width:1%;">
+				<col style="width:99%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Parameter</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><tt>id</tt></td>
+					<td>A unique name for your foo. <a href="#">hyperlink</a> <a href="#"><tt>hyperlink code item</tt></a></td>
+				</tr>
+				<tr>
+					<td><tt>version</tt></td>
+					<td>The version of your foo.</td>
+				</tr>
+				<tr>
+					<td><tt>format</tt></td>
+					<td>The formatting convention of your foo.</td>
+				</tr>
+			</tbody>
+		</table>
+	
+	</div><!-- desc -->
+	
+	<div class="example">
+	
+		<div class="request-url">
+			<p>POST</p>
+			<p>/foo-create</p>
+		</div>
+		
+		<h2>Example Request</h2>
+		
+		<div class="choose choose-default choose-curl">
+			<pre><code class="lang-bash">
+curl "https://api.example.com/foo-create" \
+-X POST \
+-H "Developer-Authorization: fb86c5cd00e4ca3c57bec96ece43f1c87a322a611d5c54f7da871ed6ebdae32b" \
+-d '{"id":"41d2","version":"1.4","format":"Y-x"}'
+			</code></pre>
+		</div>
+		
+		<div class="choose choose-php">
+			<pre><code class="lang-php">
+// TODO: Put PHP code here
+			</code></pre>
+		</div>
+		
+		<div class="choose choose-nodejs">
+			<pre><code class="lang-js">
+// TODO: Put Node.js code here
+			</code></pre>
+		</div>
+		
+		<div class="choose choose-python">
+			<pre><code class="lang-python">
+// TODO: Put Python code here
+			</code></pre>
+		</div>
+		
+		<h2>Example Request Body</h2>
+		
+		<pre><code class="lang-json">
+{
+  "id":"41d2",
+  "version":"1.4",
+  "format":"Y-x"
+ }
+		</code></pre>
+
+		<h2>Example Response</h2>
+		
+		<pre><code class="lang-json">
+{
+  "status":"foo created"
+}
+		</code></pre>
+	
+	</div><!-- example -->
+
+</section>
+
+<!-----------------------  SECTION ----------------------------------------->
+<section rel="1.1.2">
+
+	<div class="desc">
+	
+		<h1>Item 1.2</h1>
+		
+		<h2>I am an H2</h2>
+		
+		<p>Find a foo.</p>
+		
+		<table class="table table-condensed table-bordered">
+			<colgroup>
+				<col style="width:1%;">
+				<col style="width:99%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Parameter</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><tt>id</tt></td>
+					<td>The id key for your foo.</td>
+				</tr>
+			</tbody>
+		</table>
+	
+	</div><!-- desc -->
+	
+	<div class="example">
+	
+		<div class="request-url">
+			<p>POST</p>
+			<p>/foo-find</p>
+		</div>
+		
+		<h2>Example Request</h2>
+		
+		<div class="choose choose-default choose-curl">
+			<pre><code class="lang-bash">
+curl "https://api.example.com/foo-find" \
+-X POST \
+-H "Developer-Authorization: fb86c5cd00e4ca3c57bec96ece43f1c87a322a611d5c54f7da871ed6ebdae32b" \
+-d '{"id":"41d2"}'
+			</code></pre>
+		</div>
+		
+		<div class="choose choose-php">
+			<pre><code class="lang-php">
+// TODO: Put PHP code here
+			</code></pre>
+		</div>
+		
+		<div class="choose choose-nodejs">
+			<pre><code class="lang-js">
+// TODO: Put Node.js code here
+			</code></pre>
+		</div>
+		
+		<div class="choose choose-python">
+			<pre><code class="lang-python">
+// TODO: Put Python code here
+			</code></pre>
+		</div>
+		
+		<h2>Example Request Body</h2>
+		
+		<pre><code class="lang-json">
+{
+  "id":"41d2"
+ }
+		</code></pre>
+
+		<h2>Example Response</h2>
+		
+		<pre><code class="lang-json">
+{
+  "status":"foo found",
+  "foo": {
+  	"id":"41d2",
+  	"version":"1.4",
+  	"format":"Y-x"
+  }
+}
+		</code></pre>
+	
+	</div><!-- example -->
+
+</section>
+
+		<div id="example-bg"></div>
+		
+		</div><!-- main -->
+	</div><!-- row -->
+</div><!-- layout -->
+
+</body>
+</html>
+
