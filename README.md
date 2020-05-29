@@ -4,8 +4,7 @@ A Bootstrap v3.4.1 Template for Creating and Viewing API Docs
 Version: Beta 1.0 \
 MIT License
 
-![Screenshot]
-(https://raw.githubusercontent.com/volomike/bootdox/master/img/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/volomike/bootdox/master/img/screenshot.png)
 
 Using Bootstrap v3.4.1, this template can be edited to make REST API docs vaguely similar in nature to the format of the popular [docbox](https://github.com/tmcw/docbox).
 
